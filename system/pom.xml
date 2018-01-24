@@ -9,31 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>webapi</artifactId>
-    <packaging>war</packaging>
+    <artifactId>system</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.orient</groupId>
-            <artifactId>login</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.orient</groupId>
-            <artifactId>system</artifactId>
+            <artifactId>webbase</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <!-- 为jar包取名 -->
-        <finalName>OrientBase</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

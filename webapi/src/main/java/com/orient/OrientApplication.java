@@ -9,11 +9,9 @@
  */
 package com.orient;
 
-import com.orient.properties.JwtProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author :  panduanduan
@@ -21,8 +19,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Creation Date:  2018-01-22 4:43 PM
  */
 @SpringBootApplication
-@ComponentScan("com.orient")
-@EnableConfigurationProperties({JwtProperties.class})
+@EnableScheduling
 public class OrientApplication {
 
     public static void main(String[] args) {
